@@ -1,5 +1,7 @@
 package com.github.theimplementer.valkyrie;
 
+import com.github.theimplementer.valkyrie.sector.Sector;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 

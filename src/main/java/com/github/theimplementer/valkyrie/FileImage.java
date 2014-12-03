@@ -1,9 +1,11 @@
 package com.github.theimplementer.valkyrie;
 
+import com.github.theimplementer.valkyrie.sector.Sector;
+
 import java.io.*;
 import java.util.Iterator;
 
-import static com.github.theimplementer.valkyrie.SectorFactory.sector;
+import static com.github.theimplementer.valkyrie.sector.SectorFactory.sector;
 
 public class FileImage implements Iterable<Sector> {
 
