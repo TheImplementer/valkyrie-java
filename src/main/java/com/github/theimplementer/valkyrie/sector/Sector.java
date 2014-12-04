@@ -6,7 +6,7 @@ import static com.github.theimplementer.valkyrie.sector.SectorDefinition.*;
 
 public abstract class Sector {
 
-    private final byte[] sectorData;
+    protected final byte[] sectorData;
 
     public Sector(byte[] sectorData) {
         this.sectorData = Arrays.copyOf(sectorData, sectorData.length);
