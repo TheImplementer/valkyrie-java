@@ -28,5 +28,19 @@ public abstract class Sector {
         return sectorData[MODE];
     }
 
+    public boolean isData() {
+        return (sectorData[SUBHEADER] & DATA_MASK) != 0;
+    }
+
+    public boolean isAudio() {
+        return (sectorData[SUBHEADER] & AUDIO_MASK) != 0;
+    }
+
+    public boolean isVideo() {
+        return (sectorData[SUBHEADER] & VIDEO_MASK) != 0;
+    }
+
     public abstract byte[] getData();
+
+    public abstract Form getForm();
 }

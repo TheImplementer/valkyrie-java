@@ -11,7 +11,9 @@ public class Main {
         final FileImage fileImage = new FileImage(new File("/Users/implementer/Documents/vp.bin"));
         for (Sector sector : fileImage) {
             System.out.println("sector.getMode() = " + sector.getMode());
-            Thread.sleep(400);
+            System.out.println("sector.getForm() = " + sector.getForm());
+            System.out.println("sector.isData? = " + sector.isData());
+            Thread.sleep(200);
         }
     }
 }
