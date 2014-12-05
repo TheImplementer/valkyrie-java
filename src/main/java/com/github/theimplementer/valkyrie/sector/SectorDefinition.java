@@ -14,4 +14,5 @@ public class SectorDefinition {
     public static final byte DATA_MASK = 0x8;
     public static final byte AUDIO_MASK = 0x4;
     public static final byte VIDEO_MASK = 0x2;
+    public static final int SECTOR_SIZE = 2352;
 }
