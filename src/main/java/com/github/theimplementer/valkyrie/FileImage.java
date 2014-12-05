@@ -11,12 +11,12 @@ import java.util.Iterator;
 import static com.github.theimplementer.valkyrie.sector.SectorDefinition.SECTOR_SIZE;
 import static com.github.theimplementer.valkyrie.sector.SectorFactory.sector;
 
-public class DiscImage implements Disc {
+public class FileImage implements Disc {
 
     private final RandomAccessFile randomAccessFile;
     private final File file;
 
-    public DiscImage(File file) throws FileNotFoundException {
+    public FileImage(File file) throws FileNotFoundException {
         this.file = file;
         this.randomAccessFile = new RandomAccessFile(file, "r");
     }
